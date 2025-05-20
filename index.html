@@ -4,60 +4,83 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="AI-Powered Resume Analyzer">
-  <title>AI-Powered Resume Analyzer</title>
+  <title>University of Juba - Resume Analyzer</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f5f5f5;
-      color: #333;
+      background-color: #e6f0ff;
+      color: #00264d;
     }
     header, section {
       padding: 40px 80px;
     }
     header {
-      background-color: #222;
+      background: linear-gradient(to right, #004080, #0073e6);
       color: #fff;
       text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
     h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 2.8em;
+    }
+    h2.subtitle {
+      font-size: 1.5em;
+      margin-top: 10px;
+      font-weight: 300;
+      color: #e0e0e0;
     }
     nav a {
-      color: #00bcd4;
+      color: #b3e0ff;
       margin: 0 10px;
       text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     section {
-      background-color: #fff;
-      margin: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background-color: #ffffff;
+      margin: 20px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 51, 102, 0.1);
+      max-width: 1000px;
+    }
+    h2 {
+      color: #003366;
     }
     img {
       max-width: 100%;
-      border-radius: 10px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
     pre {
-      background: #eee;
+      background: #d9e6f2;
       padding: 15px;
       overflow-x: auto;
+      border-left: 5px solid #0073e6;
     }
     video {
       max-width: 100%;
-      border-radius: 10px;
+      border-radius: 12px;
       margin-top: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
     input[type="file"] {
       margin-top: 10px;
+    }
+    ul li {
+      margin-bottom: 8px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>AI-Powered Resume Analyzer</h1>
+    <img src="assets/uoj.jpg" alt="University of Juba Logo" style="max-height: 100px; margin-bottom: 20px;">
+    <h1>University of Juba</h1>
+    <h2 class="subtitle">School of Computer Science and Information Technology (IT)</h2>
     <p><a href="#abstract">Abstract</a> | <a href="https://github.com/Ganomanut/Updated-AI-Powered-Resume-Analyzer">GitHub</a> | <a href="#visuals">Visualizations</a></p>
   </header>
 
@@ -77,7 +100,7 @@
       The system parses unstructured resumes into structured formats and computes multi-factor similarity with job postings.
       It includes modules for skill extraction, job title prediction, and candidate ranking.
     </p>
-    <img src="assets/method_overview.png" alt="Method Overview">
+    <img src="assets/overview.png" alt="Method Overview">
   </section>
 
   <section id="features">
@@ -147,8 +170,10 @@
 }</code></pre>
   </section>
 
-  <footer style="text-align: center; padding: 20px; background-color: #222; color: #fff;">
+  <footer style="text-align: center; padding: 20px; background-color: #004080; color: #fff;">
     <p>Website template adapted from Michaël Gharbi</p>
+    <p>Contact: <a href="mailto:ganomanut@gmail.com" style="color: #b3e0ff;">ganomanut@gmail.com</a></p>
+    <p>&copy; 2025 University of Juba. All rights reserved.</p>
   </footer>
 </body>
 </html>
