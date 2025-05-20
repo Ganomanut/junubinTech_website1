@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,7 +54,6 @@
     }
     img {
       display: block;
-      max-width: 100%;
       height: auto;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
@@ -62,6 +62,9 @@
     .logo-img {
       max-width: 100px;
       margin-bottom: 10px;
+    }
+    .half-size {
+      max-width: 50%;
     }
     pre {
       background: #d9e6f2;
@@ -110,7 +113,7 @@
     <p>
       This AI-powered resume analyzer automatically parses resumes, extracts structured information, and evaluates how well each resume matches a job description. 
       Built using TensorFlow and natural language processing, the system enhances recruitment efficiency through intelligent automation.
-      
+
       Traditional keyword-based systems often fail to capture the nuanced alignment between candidate experience and job requirements. 
       Our system addresses this by using a transformer-based NLP model to parse resumes, match them to job descriptions, and compute semantic and statistical similarity scores.
       It offers a unified backend for resume parsing and intelligent job matching that can integrate with job portals and support continuous learning.
@@ -123,7 +126,7 @@
       The system parses unstructured resumes into structured formats and computes multi-factor similarity with job postings.
       It includes modules for skill extraction, job title prediction, and candidate ranking.
     </p>
-    <img src="https://raw.githubusercontent.com/Ganomanut/junubinTech_website1/main/Overview.png" alt="Method Overview">
+    <img class="half-size" src="https://raw.githubusercontent.com/Ganomanut/junubinTech_website1/main/Overview.png" alt="Method Overview">
   </section>
 
   <section id="features">
@@ -152,10 +155,14 @@
 
   <section id="visuals">
     <h2>Visualizations</h2>
+
     <h3>Match Score Visualization</h3>
-    <img src="https://raw.githubusercontent.com/Ganomanut/junubinTech_website1/main/visualscore.png" alt="Match Score Visualization">
-    <h3>Resume Highlights</h3>
-    <img src="https://raw.githubusercontent.com/Ganomanut/junubinTech_website1/main/resumeparse.png" alt="Resume Parsing Demo">
+    <p>This chart illustrates the AI's assessment of how well a resume aligns with a specific job description. The scores are calculated based on direct skill matches, job title relevance, experience similarity, and other NLP-derived metrics.</p>
+    <img class="half-size" src="https://raw.githubusercontent.com/Ganomanut/junubinTech_website1/main/visualscore.png" alt="Match Score Visualization">
+
+    <h3>Resume Parsing Output</h3>
+    <p>This parsed view shows how the system extracts structured information such as job titles, skills, education, and work experience from a raw resume file. This structured data is then used to perform intelligent matching with job listings.</p>
+    <img class="half-size" src="https://raw.githubusercontent.com/Ganomanut/junubinTech_website1/main/resumeparse.png" alt="Resume Parsing Demo">
   </section>
 
   <section id="resources">
