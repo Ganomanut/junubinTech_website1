@@ -1,56 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Developer AI-Powered Resume Analyzer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI-Powered Resume Analyzer">
+  <title>AI-Powered Resume Analyzer</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      text-align: center;
-      padding: 4rem;
-      background: linear-gradient(to right, #eef2f3, #8e9eab);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
       color: #333;
     }
-
+    header, section {
+      padding: 40px 80px;
+    }
+    header {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+    }
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
+      margin: 0;
+      font-size: 2.5em;
     }
-
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
-
-    a.button {
-      padding: 12px 24px;
-      font-size: 1rem;
-      background-color: #007acc;
-      color: white;
+    nav a {
+      color: #00bcd4;
+      margin: 0 10px;
       text-decoration: none;
-      border-radius: 6px;
-      transition: background-color 0.3s ease;
     }
-
-    a.button:hover {
-      background-color: #005fa3;
+    section {
+      background-color: #fff;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-
-    footer {
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #555;
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    pre {
+      background: #eee;
+      padding: 15px;
+      overflow-x: auto;
     }
   </style>
 </head>
 <body>
-  <h1>Developer AI-Powered Resume Analyzer</h1>
-  <p>Analyze your resume and match it to job descriptions with AI precision.</p>
-  <a class="button" href="https://github.com/YOUR_USERNAME">View Source on GitHub</a>
+  <header>
+    <h1>AI-Powered Resume Analyzer</h1>
+    <p><a href="#abstract">Abstract</a> | <a href="https://github.com/yourusername/resume-analyzer">Code</a> | <a href="#visuals">Visualizations</a> | <a href="#citation">Citation</a></p>
+  </header>
 
-  <footer>
-    <p>&copy; 2025 Developer AI Resume Tool</p>
+  <section id="abstract">
+    <h2>Abstract</h2>
+    <p>
+      The AI-Powered Resume Analyzer is a unified system for intelligent resume parsing and job matching.
+      Traditional keyword-based systems often fail to understand contextual nuances and alignment between a candidate’s experience and job requirements. 
+      Our model leverages transformer-based NLP architecture to extract structured data, match resumes with job descriptions, and rank candidates based on semantic and statistical scores.
+    </p>
+  </section>
+
+  <section id="method">
+    <h2>Method Overview</h2>
+    <p>
+      The system parses unstructured resumes into structured formats and computes multi-factor similarity with job postings.
+      It includes modules for skill extraction, job title prediction, and candidate ranking.
+    </p>
+    <img src="assets/method_overview.png" alt="Method Overview">
+  </section>
+
+  <section id="features">
+    <h2>Key Features</h2>
+    <ul>
+      <li>Resume Parsing into structured JSON</li>
+      <li>Job Description Matching</li>
+      <li>Job Title Prediction using ML</li>
+      <li>Semantic Skill Extraction</li>
+      <li>Candidate Ranking and Score Visualization</li>
+    </ul>
+  </section>
+
+  <section id="visuals">
+    <h2>Visualizations</h2>
+    <h3>Match Score Visualization</h3>
+    <img src="assets/match_score_viz.png" alt="Match Score Visualization">
+    <h3>Resume Highlights</h3>
+    <img src="assets/resume_parsing_demo.png" alt="Resume Parsing Demo">
+  </section>
+
+  <section id="citation">
+    <h2>Citation</h2>
+    <pre><code>@misc{gano2025resumeanalyzer,
+  title={AI-Powered Resume Analyzer},
+  author={Gano},
+  year={2025},
+  note={\url{https://github.com/yourusername/resume-analyzer}},
+}</code></pre>
+  </section>
+
+  <footer style="text-align: center; padding: 20px; background-color: #222; color: #fff;">
+    <p>Website template adapted from Michaël Gharbi</p>
   </footer>
 </body>
 </html>
