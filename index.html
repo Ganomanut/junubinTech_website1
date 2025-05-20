@@ -45,20 +45,29 @@
       padding: 15px;
       overflow-x: auto;
     }
+    video {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    input[type="file"] {
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>AI-Powered Resume Analyzer</h1>
-    <p><a href="#abstract">Abstract</a> | <a href="https://github.com/yourusername/resume-analyzer">Code</a> | <a href="#visuals">Visualizations</a> | <a href="#citation">Citation</a></p>
+    <p><a href="#abstract">Abstract</a> | <a href="https://github.com/Ganomanut/Updated-AI-Powered-Resume-Analyzer">GitHub</a> | <a href="#visuals">Visualizations</a></p>
   </header>
 
   <section id="abstract">
     <h2>Abstract</h2>
     <p>
-      The AI-Powered Resume Analyzer is a unified system for intelligent resume parsing and job matching.
-      Traditional keyword-based systems often fail to understand contextual nuances and alignment between a candidate’s experience and job requirements. 
-      Our model leverages transformer-based NLP architecture to extract structured data, match resumes with job descriptions, and rank candidates based on semantic and statistical scores.
+      This AI-powered resume analyzer automatically parses resumes, extracts structured information, and evaluates how well each resume matches a job description. Built using TensorFlow and natural language processing, the system enhances recruitment efficiency through intelligent automation.
+    </p>
+    <p>
+      Traditional keyword-based systems often fail to capture the nuanced alignment between candidate experience and job requirements. Our system addresses this by using a transformer-based NLP model to parse resumes, match them to job descriptions, and compute semantic and statistical similarity scores. It offers a unified backend for resume parsing and intelligent job matching that can integrate with job portals and support continuous learning.
     </p>
   </section>
 
@@ -82,6 +91,19 @@
     </ul>
   </section>
 
+  <section id="content">
+    <h2>Information Extracted</h2>
+    <ul>
+      <li>Job Title</li>
+      <li>Candidate Highlights</li>
+      <li>Direct Skill Matches</li>
+      <li>Related Skills</li>
+      <li>Experience Alignment</li>
+      <li>Keyword Frequency Score</li>
+      <li>Overall Matching Score</li>
+    </ul>
+  </section>
+
   <section id="visuals">
     <h2>Visualizations</h2>
     <h3>Match Score Visualization</h3>
@@ -90,13 +112,38 @@
     <img src="assets/resume_parsing_demo.png" alt="Resume Parsing Demo">
   </section>
 
+  <section id="resources">
+    <h2>Resources</h2>
+    <ul>
+      <li><a href="https://drive.google.com/drive/folders/12jgwkMWQ4Ulmj6DOS3rfR-LDWQpCVo1l?usp=sharing" target="_blank">Google Drive</a></li>
+      <li><a href="https://github.com/Ganomanut/Updated-AI-Powered-Resume-Analyzer" target="_blank">GitHub Repository</a></li>
+    </ul>
+  </section>
+
+  <section id="demo">
+    <h2>Video Demonstration</h2>
+    <p>You can upload and preview a demo video below (MP4 format recommended):</p>
+    <input type="file" accept="video/mp4" onchange="previewVideo(event)">
+    <video id="demoVideo" controls style="display: none;"></video>
+    <script>
+      function previewVideo(event) {
+        const file = event.target.files[0];
+        if (file) {
+          const videoElement = document.getElementById('demoVideo');
+          videoElement.src = URL.createObjectURL(file);
+          videoElement.style.display = 'block';
+        }
+      }
+    </script>
+  </section>
+
   <section id="citation">
     <h2>Citation</h2>
     <pre><code>@misc{gano2025resumeanalyzer,
   title={AI-Powered Resume Analyzer},
   author={Gano},
   year={2025},
-  note={\url{https://github.com/yourusername/resume-analyzer}},
+  note={\url{https://github.com/Ganomanut/Updated-AI-Powered-Resume-Analyzer}},
 }</code></pre>
   </section>
 
