@@ -167,19 +167,11 @@
 
   <section id="demo">
     <h2>Video Demonstration</h2>
-    <p>You can upload and preview a demo video below (MP4 format recommended):</p>
-    <input type="file" accept="video/mp4" onchange="previewVideo(event)">
-    <video id="demoVideo" controls style="display: none;"></video>
-    <script>
-      function previewVideo(event) {
-        const file = event.target.files[0];
-        if (file) {
-          const videoElement = document.getElementById('demoVideo');
-          videoElement.src = URL.createObjectURL(file);
-          videoElement.style.display = 'block';
-        }
-      }
-    </script>
+    <p>Watch the system in action in this brief demonstration:</p>
+    <video controls>
+      <source src="assets/resume_demo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </section>
 
   <section id="citation">
