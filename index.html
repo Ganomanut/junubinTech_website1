@@ -12,24 +12,23 @@
       padding: 0;
       background-color: #e6f0ff;
       color: #00264d;
+      font-size: 15px;
     }
     header, section {
-      padding: 40px 80px;
+      padding: 20px 40px;
     }
     header {
       background: linear-gradient(to right, #004080, #0073e6);
       color: #fff;
       text-align: center;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-    header .subtitle {
-      color: #fff !important;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
     nav a {
       color: #b3e0ff;
-      margin: 0 10px;
+      margin: 0 6px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 14px;
     }
     nav a:hover {
       text-decoration: underline;
@@ -38,71 +37,94 @@
       color: #fff;
       background: #0073e6;
       border-radius: 4px;
-      padding: 2px 8px;
+      padding: 2px 6px;
     }
     section {
       background-color: #ffffff;
-      margin: 20px auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0, 51, 102, 0.1);
-      max-width: 1000px;
+      margin: 15px auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 51, 102, 0.05);
+      max-width: 900px;
     }
     h2 {
       color: #003366;
+      font-size: 20px;
     }
     img {
       display: block;
+      max-width: 90%;
       height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-      margin: 20px auto;
+      border-radius: 8px;
+      margin: 15px auto;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
     .logo-img {
-      max-width: 100px;
-      margin-bottom: 10px;
+      max-width: 80px;
+      margin-bottom: 5px;
     }
     .half-size {
-      max-width: 50%;
+      max-width: 45%;
     }
     pre {
       background: #d9e6f2;
-      padding: 15px;
+      padding: 10px;
       overflow-x: auto;
-      border-left: 5px solid #0073e6;
+      font-size: 13px;
+      border-left: 4px solid #0073e6;
     }
     iframe.square {
-      width: 350px;
-      height: 350px;
+      width: 300px;
+      height: 300px;
       border: none;
-      border-radius: 12px;
-      margin: 20px auto;
+      border-radius: 8px;
+      margin: 15px auto;
       display: block;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
     }
     ul li {
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
     .github-badge {
       display: inline-block;
-      padding: 3px 8px;
-      font-size: 12px;
+      padding: 2px 6px;
+      font-size: 11px;
       background-color: #333;
       color: #fff;
       border-radius: 3px;
-      margin-left: 6px;
-      font-weight: normal;
+      margin-left: 4px;
+    }
+    footer {
+      background-color: #004080;
+      color: #fff;
+      padding: 20px 40px;
+      font-size: 14px;
+    }
+    footer h3 {
+      font-size: 16px;
+    }
+    footer p, footer a {
+      font-size: 13px;
+    }
+    footer a {
+      color: #b3e0ff;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    hr {
+      margin: 15px 0;
+      border-color: #0073e6;
     }
   </style>
 </head>
 <body>
   <header>
     <img class="logo-img" src="https://raw.githubusercontent.com/Ganomanut/junubinTech_website1/main/uoj.jpg" alt="University of Juba Logo" />
-    <h1>University of Juba</h1>
-    <h2 class="subtitle" style="color: #fff;">School of Computer Science and Information Technology (IT)</h2>
-    <h3 class="subtitle">AI Powered Resume Analyzer</h3>
-    <p class="project-desc">
-      An AI-based system that extracts structured information from resumes and predicts the best-fit job category and specialization using deep learning.
-    </p>
+    <h1 style="font-size: 24px;">University of Juba</h1>
+    <h2 class="subtitle" style="color: #fff; font-size: 18px;">School of Computer Science and IT</h2>
+    <h3 class="subtitle" style="font-size: 16px;">AI Powered Resume Analyzer</h3>
+    <p style="max-width: 700px; margin: auto;">An AI-based system that extracts structured information from resumes and predicts the best-fit job category and specialization using deep learning.</p>
     <nav>
       <a href="index.html">Home</a> |
       <a href="developed.html">What We Developed</a> |
@@ -114,113 +136,34 @@
     </nav>
   </header>
 
-  <section id="abstract">
-    <h2>Abstract</h2>
-    <p>
-      This AI-powered resume analyzer automatically parses resumes, extracts structured information, and evaluates how well each resume matches a job description. 
-      Built using TensorFlow and natural language processing, the system enhances recruitment efficiency through intelligent automation.
+  <!-- Keep your original content here -->
+  <!-- Just updated styles will make it look more compact and clean -->
 
-      Traditional keyword-based systems often fail to capture the nuanced alignment between candidate experience and job requirements. 
-      Our system addresses this by using a transformer-based NLP model to parse resumes, match them to job descriptions, and compute semantic and statistical similarity scores.
-      It offers a unified backend for resume parsing and intelligent job matching that can integrate with job portals and support continuous learning.
-    </p>
-  </section>
+  <!-- Reinsert your existing sections like abstract, method, features, etc. -->
 
-  <section id="method">
-    <h2>Method Overview</h2>
-    <p>
-      The system parses unstructured resumes into structured formats and computes multi-factor similarity with job postings.
-      It includes modules for skill extraction, job title prediction, and candidate ranking.
-    </p>
-    <img class="half-size" src="https://raw.githubusercontent.com/Ganomanut/junubinTech_website1/main/Overview.png" alt="Method Overview">
-  </section>
-
-  <section id="features">
-    <h2>Key Features</h2>
-    <ul>
-      <li>Resume Parsing into structured JSON</li>
-      <li>Job Description Matching</li>
-      <li>Job Title Prediction using ML</li>
-      <li>Semantic Skill Extraction</li>
-      <li>Candidate Ranking and Score Visualization</li>
-    </ul>
-  </section>
-
-  <section id="content">
-    <h2>Information Extracted</h2>
-    <ul>
-      <li>Job Title</li>
-      <li>Candidate Highlights</li>
-      <li>Direct Skill Matches</li>
-      <li>Related Skills</li>
-      <li>Experience Alignment</li>
-      <li>Keyword Frequency Score</li>
-      <li>Overall Matching Score</li>
-    </ul>
-  </section>
-
-  <section id="visuals">
-    <h2>Visualizations</h2>
-
-    <h3>Match Score Visualization</h3>
-    <p>This chart illustrates the AI's assessment of how well a resume aligns with a specific job description. The scores are calculated based on direct skill matches, job title relevance, experience similarity, and other NLP-derived metrics.</p>
-    <img class="half-size" src="https://raw.githubusercontent.com/Ganomanut/junubinTech_website1/main/visualscore.png" alt="Match Score Visualization">
-
-    <h3>Resume Parsing Output</h3>
-    <p>This parsed view shows how the system extracts structured information such as job titles, skills, education, and work experience from a raw resume file. This structured data is then used to perform intelligent matching with job listings.</p>
-    <img class="half-size" src="https://raw.githubusercontent.com/Ganomanut/junubinTech_website1/main/resumeparse.png" alt="Resume Parsing Demo">
-  </section>
-
-  <section id="resources">
-    <h2>Resources</h2>
-    <ul>
-      <li><a href="https://drive.google.com/drive/folders/12jgwkMWQ4Ulmj6DOS3rfR-LDWQpCVo1l?usp=sharing" target="_blank">Google Drive</a></li>
-      <li><a href="https://github.com/Ganomanut/Updated-AI-Powered-Resume-Analyzer" target="_blank">GitHub Repository</a></li>
-      <li><a href="https://drive.google.com/file/d/1yeB43sJYhatpEFbkkfedjOTT1mUfLQId/view?usp=sharing" target="_blank">Google Colab Notebook</a></li>
-    </ul>
-  </section>
-
-  <section id="demo">
-    <h2>Video Demonstration</h2>
-    <p>Watch how the AI system parses a resume and predicts the candidate’s job specialization based on extracted skills, titles, and experiences. The prediction output is dynamically generated after resume upload.</p>
-    <iframe class="square" src="https://drive.google.com/file/d/1tfn_e7nVp0wflhzedYF0Drv50Cy9O-PS/preview" allow="autoplay"></iframe>
-  </section>
-
-  <section id="citation">
-    <h2>Citation</h2>
-    <pre><code>@misc{gano2025resumeanalyzer,
-  title={AI-Powered Resume Analyzer},
-  author={Gano},
-  year={2025},
-  note={\url{https://github.com/Ganomanut/Updated-AI-Powered-Resume-Analyzer}},
-}</code></pre>
-  </section>
-
-  <!-- CONTACT FOOTER -->
-  <footer style="background-color: #004080; color: #fff; padding: 30px 80px; text-align: left;">
+  <footer>
     <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
       <div>
-        <h3 style="margin-top: 0;">Contact Us</h3>
-        <p>Email: <a href="jamesdutmathok@gmail.com" style="color: #b3e0ff;">jamesdutmathok@gmail.com</a></p>
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:jamesdutmathok@gmail.com">jamesdutmathok@gmail.com</a></p>
         <p>Phone: +211 924519185</p>
-       <p>Email: <a href="agarmarial2018@gmail.com" style="color: #b3e0ff;">agarmarial2018@gmail.com</a></p>
+        <p>Email: <a href="mailto:agarmarial2018@gmail.com">agarmarial2018@gmail.com</a></p>
         <p>Phone: +211 922782228</p>
-        
         <p>Address: University of Juba, School of CS & IT, Juba, South Sudan</p>
       </div>
       <div>
-        <h3 style="margin-top: 0;">Quick Links</h3>
-        <p><a href="index.html" style="color: #b3e0ff;">Home</a></p>
-        <p><a href="install.html" style="color: #b3e0ff;">Installation Guide</a></p>
-        <p><a href="complete.html" style="color: #b3e0ff;">Full Project</a></p>
+        <h3>Quick Links</h3>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="install.html">Installation Guide</a></p>
+        <p><a href="complete.html">Full Project</a></p>
       </div>
       <div>
-        <h3 style="margin-top: 0;">Follow Us</h3>
-        <p><a href="https://github.com/Ganomanut/Updated-AI-Powered-Resume-Analyzer" target="_blank" style="color: #b3e0ff;">GitHub</a></p>
-        <p><a href="https://www.linkedin.com/" target="_blank" style="color: #b3e0ff;">LinkedIn</a></p>
+        <h3>Follow Us</h3>
+        <p><a href="https://github.com/Ganomanut/Updated-AI-Powered-Resume-Analyzer" target="_blank">GitHub</a></p>
+        <p><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></p>
       </div>
     </div>
-    <hr style="margin: 20px 0; border-color: #0073e6;">
+    <hr />
     <p style="text-align: center;">&copy; 2025 University of Juba. Developed by Fourth Year CS & IT Students.</p>
   </footer>
 </body>
