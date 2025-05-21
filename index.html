@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -39,6 +39,9 @@
       margin-left: auto;
       margin-right: auto;
       color: #d9f0ff;
+    }
+    nav {
+      margin-top: 15px;
     }
     nav a {
       color: #b3e0ff;
@@ -101,6 +104,12 @@
       margin-left: 6px;
       font-weight: normal;
     }
+    .page-section {
+      padding: 30px 60px;
+    }
+    .alt-background {
+      background-color: #f4f9ff;
+    }
   </style>
 </head>
 <body>
@@ -114,8 +123,13 @@
     </p>
     <nav>
       <a href="#abstract">Abstract</a> |
-      <a href="https://github.com/Ganomanut/Updated-AI-Powered-Resume-Analyzer" target="_blank">GitHub<span class="github-badge">New</span></a> |
-      <a href="#visuals">Visualizations</a>
+      <a href="#features">Features</a> |
+      <a href="#vision">Vision</a> |
+      <a href="#mission">Mission</a> |
+      <a href="#goals">Goals</a> |
+      <a href="#completeproject">Complete Project</a> |
+      <a href="#developed">What We Developed</a> |
+      <a href="#installation">Installation</a>
     </nav>
   </header>
 
@@ -124,20 +138,7 @@
     <p>
       This AI-powered resume analyzer automatically parses resumes, extracts structured information, and evaluates how well each resume matches a job description. 
       Built using TensorFlow and natural language processing, the system enhances recruitment efficiency through intelligent automation.
-
-      Traditional keyword-based systems often fail to capture the nuanced alignment between candidate experience and job requirements. 
-      Our system addresses this by using a transformer-based NLP model to parse resumes, match them to job descriptions, and compute semantic and statistical similarity scores.
-      It offers a unified backend for resume parsing and intelligent job matching that can integrate with job portals and support continuous learning.
     </p>
-  </section>
-
-  <section id="method">
-    <h2>Method Overview</h2>
-    <p>
-      The system parses unstructured resumes into structured formats and computes multi-factor similarity with job postings.
-      It includes modules for skill extraction, job title prediction, and candidate ranking.
-    </p>
-    <img class="half-size" src="https://raw.githubusercontent.com/Ganomanut/junubinTech_website1/main/Overview.png" alt="Method Overview">
   </section>
 
   <section id="features">
@@ -151,54 +152,51 @@
     </ul>
   </section>
 
-  <section id="content">
-    <h2>Information Extracted</h2>
+  <section id="vision" class="alt-background page-section">
+    <h2>Project Vision</h2>
+    <p>To revolutionize the recruitment process by introducing intelligent, automated resume analysis tools that bridge the gap between candidate potential and job requirements using advanced AI techniques.</p>
+  </section>
+
+  <section id="mission" class="page-section">
+    <h2>Project Mission</h2>
+    <p>Our mission is to create an accessible, scalable, and intelligent platform that empowers recruiters to make faster, fairer, and data-driven hiring decisions while enhancing candidate experience.</p>
+  </section>
+
+  <section id="goals" class="alt-background page-section">
+    <h2>Project Goals</h2>
     <ul>
-      <li>Job Title</li>
-      <li>Candidate Highlights</li>
-      <li>Direct Skill Matches</li>
-      <li>Related Skills</li>
-      <li>Experience Alignment</li>
-      <li>Keyword Frequency Score</li>
-      <li>Overall Matching Score</li>
+      <li>Develop an end-to-end resume parsing and matching pipeline</li>
+      <li>Integrate deep learning for job title and skill prediction</li>
+      <li>Enhance fairness and transparency in candidate evaluation</li>
+      <li>Deploy a user-friendly web interface for real-world use</li>
     </ul>
   </section>
 
-  <section id="visuals">
-    <h2>Visualizations</h2>
-
-    <h3>Match Score Visualization</h3>
-    <p>This chart illustrates the AI's assessment of how well a resume aligns with a specific job description. The scores are calculated based on direct skill matches, job title relevance, experience similarity, and other NLP-derived metrics.</p>
-    <img class="half-size" src="https://raw.githubusercontent.com/Ganomanut/junubinTech_website1/main/visualscore.png" alt="Match Score Visualization">
-
-    <h3>Resume Parsing Output</h3>
-    <p>This parsed view shows how the system extracts structured information such as job titles, skills, education, and work experience from a raw resume file. This structured data is then used to perform intelligent matching with job listings.</p>
-    <img class="half-size" src="https://raw.githubusercontent.com/Ganomanut/junubinTech_website1/main/resumeparse.png" alt="Resume Parsing Demo">
+  <section id="completeproject" class="page-section">
+    <h2>Complete Project Details</h2>
+    <p>The complete project includes backend APIs built with Flask, resume parsing models using spaCy and transformers, job title classification using deep learning, and a responsive front-end hosted online. We also provide data, code, demo videos, and reports in the resources section.</p>
   </section>
 
-  <section id="resources">
-    <h2>Resources</h2>
+  <section id="developed" class="alt-background page-section">
+    <h2>What We Developed</h2>
     <ul>
-      <li><a href="https://drive.google.com/drive/folders/12jgwkMWQ4Ulmj6DOS3rfR-LDWQpCVo1l?usp=sharing" target="_blank">Google Drive</a></li>
-      <li><a href="https://github.com/Ganomanut/Updated-AI-Powered-Resume-Analyzer" target="_blank">GitHub Repository</a></li>
-      <li><a href="https://drive.google.com/file/d/1yeB43sJYhatpEFbkkfedjOTT1mUfLQId/view?usp=sharing" target="_blank">Google Colab Notebook</a></li>
+      <li>Custom NLP-based resume parser</li>
+      <li>Machine learning pipeline for job prediction</li>
+      <li>Interactive dashboard for visualizing candidate-job matching</li>
+      <li>Web interface for resume upload and evaluation</li>
+      <li>Google Colab demo with downloadable source code</li>
     </ul>
   </section>
 
-  <section id="demo">
-    <h2>Video Demonstration</h2>
-    <p>Watch how the AI system parses a resume and predicts the candidate’s job specialization based on extracted skills, titles, and experiences. The prediction output is dynamically generated after resume upload.</p>
-    <iframe class="square" src="https://drive.google.com/file/d/1tfn_e7nVp0wflhzedYF0Drv50Cy9O-PS/preview" allow="autoplay"></iframe>
-  </section>
-
-  <section id="citation">
-    <h2>Citation</h2>
-    <pre><code>@misc{gano2025resumeanalyzer,
-  title={AI-Powered Resume Analyzer},
-  author={Gano},
-  year={2025},
-  note={\url{https://github.com/Ganomanut/Updated-AI-Powered-Resume-Analyzer}},
-}</code></pre>
+  <section id="installation" class="page-section">
+    <h2>Web App Installation Process</h2>
+    <ol>
+      <li>Clone the repository from GitHub.</li>
+      <li>Install dependencies: <code>pip install -r requirements.txt</code></li>
+      <li>Run the backend: <code>python app.py</code></li>
+      <li>Launch the frontend from <code>index.html</code></li>
+      <li>Upload resume to test the analyzer.</li>
+    </ol>
   </section>
 
   <footer style="text-align: center; padding: 20px; background-color: #004080; color: #fff;">
