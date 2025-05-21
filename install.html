@@ -1,35 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Web App Installation</title>
-  <style>
-    body { background-color: #d0ecff; color: #00334d; font-family: Consolas, monospace; padding: 25px; }
-    h1 { color: #004466; }
-    pre {
-      background-color: #b3d9ff;
-      padding: 15px;
-      border-left: 4px solid #0077cc;
-      overflow-x: auto;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Web App Installation | AI Powered Resume Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Web App Installation</h1>
-  <p>To run the AI-Powered Resume Analyzer locally:</p>
-  <pre>
-1. Clone the repo:
-   git clone https://github.com/Ganomanut/Updated-AI-Powered-Resume-Analyzer
+  <header>
+    <h1>AI Powered Resume Analyzer</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="what-we-developed.html">What We Developed</a> |
+      <a href="complete-project.html">Complete Project</a> |
+      <a href="project-mission.html">Project Mission</a> |
+      <a href="project-vision.html">Project Vision</a> |
+      <a href="goals.html">Goals</a> |
+      <a href="web-app-installation.html">Web App Installation</a> |
+      <a href="https://github.com/Ganomanut/Updated-AI-Powered-Resume-Analyzer" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </nav>
+  </header>
 
-2. Navigate to project:
-   cd Updated-AI-Powered-Resume-Analyzer
+  <main>
+    <section>
+      <h2>Web App Installation Guide</h2>
+      <p>Follow these steps to install and run the AI-Powered Resume Analyzer locally:</p>
+      <ol>
+        <li>Install <strong>XAMPP</strong> or another Apache + MySQL environment.</li>
+        <li>Clone or download the project from the <a href="https://github.com/Ganomanut/Updated-AI-Powered-Resume-Analyzer" target="_blank" rel="noopener noreferrer">GitHub repository</a>.</li>
+        <li>Place the project folder inside the <code>htdocs</code> directory of XAMPP.</li>
+        <li>Start Apache and MySQL servers using the XAMPP control panel.</li>
+        <li>Import the provided database SQL file into MySQL (if applicable).</li>
+        <li>Access the web app by navigating to <code>http://localhost/your-project-folder/</code> in your browser.</li>
+      </ol>
+      <p>For more details or troubleshooting, check the README file in the GitHub repo.</p>
+    </section>
+  </main>
 
-3. Install dependencies:
-   pip install -r requirements.txt
-
-4. Run the app:
-   streamlit run app.py
-  </pre>
-  <p>You can also try the <a href="https://colab.research.google.com/drive/1yeB43sJYhatpEFbkkfedjOTT1mUfLQId" target="_blank">Google Colab version</a>.</p>
+  <footer>
+    <p>Developed By Students from University of Juba</p>
+    <p>Contact: <a href="mailto:ganomanut@gmail.com">ganomanut@gmail.com</a></p>
+    <p>&copy; 2025 University of Juba. All rights reserved.</p>
+  </footer>
 </body>
 </html>
